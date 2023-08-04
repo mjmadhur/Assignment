@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Register"
+   android:scrollbars="vertical"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="40sp"
+                app:lottie_rawRes="@raw/signin"
+                app:lottie_autoPlay="true"
+                />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:text="Sign Up"
+                android:fontFamily="@font/poppins_bold"
+                android:textAlignment="center"
+              android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/fifth_colour"
+                app:hintAnimationEnabled="true"
+
+                android:textColorHint="@color/fifth_colour"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/fifth_colour"
+                app:startIconTint="@color/fifth_colour"
+                app:boxStrokeColor="@color/fifth_colour"
+                app:hintTextColor="@color/fifth_colour">
+
+                <EditText
+                    android:id="@+id/et_name_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:imeOptions="actionGo"
+                    android:cursorVisible="true"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="7sp"
+                android:textColor="@color/fifth_colour"
+
+                android:textColorHint="@color/fifth_colour"
+                app:boxStrokeColor="@color/fifth_colour"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/fifth_colour"
+                app:startIconTint="@color/fifth_colour"
+
+                app:hintTextColor="@color/fifth_colour">
+
+                <EditText
+                    android:id="@+id/et_email_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="16sp"
+                    android:imeOptions="actionGo"
+                    android:cursorVisible="true"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="7sp"
+                android:textColor="@color/fifth_colour"
+                android:textColorHint="@color/fifth_colour"
+
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/fifth_colour"
+                app:boxStrokeColor="@color/fifth_colour"
+                app:startIconTint="@color/fifth_colour"
+
+                app:hintTextColor="@color/fifth_colour">
+
+                <EditText
+                    android:id="@+id/et_password_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_light"
+                    android:imeOptions="actionGo"
+                    android:cursorVisible="true"
+                    android:inputType="textWebPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_marginTop="7sp"
+                android:textColor="@color/fifth_colour"
+                android:textColorHint="@color/fifth_colour"
+
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/fifth_colour"
+                app:boxStrokeColor="@color/fifth_colour"
+                app:startIconTint="@color/fifth_colour"
+
+                app:hintTextColor="@color/fifth_colour">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_light"
+
+
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/fifth_colour"
+
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:paddingTop="12sp"
+                android:paddingBottom="12sp"
+                android:layout_marginTop="20sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
